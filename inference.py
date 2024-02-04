@@ -22,7 +22,7 @@ import torch.nn.functional as F
 if __name__ == '__main__':
     RDLogger.DisableLog('rdApp.*')
     parser = ArgumentParser()
-    parser.add_argument('--protein_ligand_csv', type=str, default='./data/AAMDC_TCONS_00022447.csv',
+    parser.add_argument('--protein_ligand_csv', type=str, required=True,
                         help='Path to a .csv file specifying the input as described in the README.'
                              ' If this is not None, it will be used instead of the --protein_path, --protein_sequence and --ligand parameters')
 
